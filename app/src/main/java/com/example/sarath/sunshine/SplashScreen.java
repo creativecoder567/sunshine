@@ -22,7 +22,7 @@ private static int SPLASH_TIME_OUT= 4000;
         new     Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                Intent i = new Intent(SplashScreen.this, MainActivity.class);
+                Intent i = new Intent(SplashScreen.this, WelcomeActivity.class);
                 startActivity(i);
                 finish();
             }
