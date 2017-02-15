@@ -1,11 +1,13 @@
 <resources>
-    <string name="app_name">sunshine</string>
+    <string name="app_name">WonderHomes</string>
 
     <string name="title_activity_splash_screen">SplashScreen</string>
     <string name="dummy_button">Dummy Button</string>
     <string name="dummy_content">DUMMY\nCONTENT</string>
 
-    <string name="architect">Architect</string>
+    <string name="spinner_title">Select Spacing</string>
+    <string name="spinner_BHK">Select BHK</string>
+    <string name="architect">Architecture</string>
     <string name="interior">Interior</string>
     <string name="title_activity_welcome">Home Screen</string>
     <string name="next">NEXT</string>
@@ -27,4 +29,17 @@
     <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
     <string name="play_again">Play Again</string>
 
+    <string-array name="spacing">
+    <item>North</item>
+    <item>East</item>
+    <item>West</item>
+    <item>South</item>
+    </string-array>
+
+    <string-array name="BHK">
+        <item>1 BHK</item>
+        <item>2 BHK</item>
+        <item>3 BHK</item>
+        <item>4 BHK</item>
+    </string-array>
 </resources>

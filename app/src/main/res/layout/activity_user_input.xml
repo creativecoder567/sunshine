@@ -2,7 +2,8 @@
 <android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome4">
 
     <LinearLayout
         android:layout_width="fill_parent"
@@ -23,9 +24,21 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:singleLine="true"
-                android:hint="Plot area" />
+                android:hint="Plot area(In square feet)" />
         </android.support.design.widget.TextInputLayout>
-
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="BHK:"
+            android:layout_marginBottom="5dp"
+            />
+        <Spinner
+            android:id="@+id/spinBHK"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_BHK"
+            />
         <android.support.design.widget.TextInputLayout
             android:id="@+id/input_layout_height"
             android:layout_width="match_parent"
@@ -51,6 +64,21 @@
                 android:inputType="number"
                 android:hint="Width" />
         </android.support.design.widget.TextInputLayout>
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="Facing:"
+            android:layout_marginBottom="5dp"
+            />
+
+        <!-- Spinner Element -->
+        <Spinner
+            android:id="@+id/spinFacing"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:prompt="@string/spinner_title"
+            />
 
         <Button android:id="@+id/btn_signup"
             android:layout_width="fill_parent"

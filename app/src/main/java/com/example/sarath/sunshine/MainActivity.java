@@ -2,6 +2,7 @@ package com.example.sarath.sunshine;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
@@ -14,13 +15,17 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-         btnArchitect = (Button) findViewById(R.id.btnArchitect);
+       ActionBar actionBar =getSupportActionBar();
+        actionBar.setDisplayShowHomeEnabled(true);
+        actionBar.setIcon(R.drawable.logo);
+
+        btnArchitect = (Button) findViewById(R.id.btnArchitect);
         btnInterior = (Button) findViewById(R.id.btnInterior);
 
         btnArchitect.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this, Architect.class);
+                Intent intent = new Intent(MainActivity.this, Architecture.class);
                 startActivity(intent);
             }
         });
