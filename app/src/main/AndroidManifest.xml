@@ -6,9 +6,9 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:largeHeap="true"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme"
-        >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".SplashScreen"
             android:configChanges="orientation|keyboardHidden|screenSize"
@@ -19,20 +19,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".WelcomeActivity"
+        <activity
+            android:name=".WelcomeActivity"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".Camera"></activity>
+        <activity
+            android:name=".MainActivity"
             android:theme="@style/Theme.AppCompat.NoActionBar"/>
-        <activity android:name=".Camera" >
-
-        </activity>
-        <activity android:name=".MainActivity" />
         <activity
             android:name=".Architecture"
             android:label="@string/architect" />
         <activity
             android:name=".Interior"
             android:label="@string/interior" />
-        <activity android:name=".UserInput"
-            android:label="UserInput"></activity>
+        <activity
+            android:name=".UserInput"
+            android:label="UserInput" />
     </application>
 
 </manifest>
