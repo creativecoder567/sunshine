@@ -5,7 +5,6 @@
     android:id="@+id/toolbar"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:fitsSystemWindows="true"
-    android:minHeight="?attr/actionBarSize"
     app:theme="@style/Widget.AppCompat.DrawerArrowToggle"
     android:background="#fcf3c1">
 
